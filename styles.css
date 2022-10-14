@@ -1,0 +1,113 @@
+:root {
+  --dark: #374151;
+  --darker: #1f2937;
+  --darkest: #111827;
+  --gray: #6b7280;
+  --ligth: #eee;
+  --pink: #ec4899;
+  --purple: #8b5cf6;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Fira sans", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--dark);
+  color: #fff;
+}
+.header {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--darker);
+  border-radius: 1.5rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+.Bookmarker-sign {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+div h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0px;
+  display: auto;
+  color: var(--gray);
+}
+inpu,
+butto {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+#new-site-button {
+  margin-top: 20px;
+  height: 40px;
+  width: 80px;
+  align-self: center;
+  cursor: pointer;
+}
+.new-site-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.new-site-form input {
+  width: 500px;
+}
+.small-signs {
+  color: var(--gray);
+}
+main button {
+  cursor: pointer;
+}
+
+main {
+  margin: 1rem;
+}
+
+#sites .site {
+  justify-content: space-between;
+  display: flex;
+  padding: 2rem 1rem;
+  background: var(--darkest);
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 1rem;
+  max-width: 800px;
+  width: 100%;
+}
+
+.actions {
+  display: flex;
+}
+
+.actions button {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  display: flex;
+  margin-right: 5px;
+}
+.text {
+  margin-right: auto;
+  min-width: 150px;
+  margin-right: 350px;
+}
+.bookmarksResult {
+  display: flex;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}

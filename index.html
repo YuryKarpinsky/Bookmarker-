@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body onload="fetchBookmarks()">
+    <h2 class="Bookmarker-sign">Bookmarker</h2>
+    <div class="header">
+      <h1 class="main-sign">Save your favorite sites</h1>
+      <form class="new-site-form">
+        <h3 class="small-signs">Site name</h3>
+        <input type="text" id="site-name-input" placeholder="input site name" />
+        <h3 class="small-signs">Site url</h3>
+        <input
+          class="form"
+          id="site-url-input"
+          type="url"
+          placeholder="input site url"
+        />
+
+        <input type="submit" id="new-site-button" value="Submit" />
+      </form>
+    </div>
+    <main>
+      <div id="bookmarksResult">
+        <section id="site-list">
+          <div id="sites">
+            <div class="site">
+              <div class="content">
+                <h2 class="text">New site</h2>
+              </div>
+              <div class="actions">
+                <button class="visit">visit</button>
+                <button class="delete">delete</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
